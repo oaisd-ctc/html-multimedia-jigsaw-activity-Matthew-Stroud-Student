@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multi Media</title>
+    </head>
+    <body>
+
+        <main>
+
+            <h1>HTML Multimedia Demonstration</h1>
+
+            <h3>Video Element</h3>
+            <video width="320" height="auto" controls>
+                <source src="Raindrops_Videvo.mp4" type="video/mp4">
+                Your browser does not support the video tag LOL!
+            </video>
+
+            <h3>Audio Element</h3>
+            <audio controls>
+                <source src="mixaund-feel.mp3" type="audio/mp3">
+                Your browser does not support the audio tag LOL!
+            </audio>
+
+            <h3>Inline Frame Element</h3>
+            <iframe src="https://example.com/" height="200" width="500" name="example">
+                <p>Your browser does not support iframes LOL!</p>
+            </iframe>
+
+            <h3>Canvas Element</h3>
+            <canvas id="myCanvas" width="150" height="75" style="border:2px solid black;"></canvas>
+            <script>
+                const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "#0066A0";
+ctx.fillRect(0, 0, 150, 75);
+            </script>
+
+            <h3>SVG Element</h3>
+            <svg width="500" height="1000">
+                <circle cx="27" cy="27" r="25" stroke="#000000" stroke-width="2" fill="#FF0000"></circle>
+                <rect x="2" y="79" width="100" height="50" stroke="#000000" stroke-width="2" fill="#FF0000"></rect>
+                <ellipse cx="52" cy="183" rx="50" ry="25" stroke="#000000" stroke-width="2" fill="#FF0000"></ellipse>
+            </svg>
+
+        </main>
+
+    </body>
+</html>
